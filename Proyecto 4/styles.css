@@ -6,10 +6,6 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: Arial, sans-serif;
     color: #263238;
@@ -23,12 +19,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 22px 8%;
-
     background-color: #063970;
-
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .logo h2 {
