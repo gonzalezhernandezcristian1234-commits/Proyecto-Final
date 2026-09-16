@@ -1,0 +1,278 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #e5e7eb;
+    background-color: #0b1020;
+}
+
+
+/*Encabezado*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 7%;
+    background-color: #111827;
+    border-bottom: 2px solid #1f2937;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo h2 {
+    color: #00e5ff;
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #d1d5db;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00e5ff;
+}
+
+
+/*contenido*/
+
+.contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 70px 7%;
+    background-color: #111827;
+}
+
+.contenido-principal {
+    width: 50%;
+}
+
+.contenido-principal h1 {
+    font-size: 58px;
+    color: #00e5ff;
+    margin-bottom: 20px;
+}
+
+.contenido-principal p {
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #cbd5e1;
+}
+
+.boton {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #ff1744;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: #d50032;
+    transform: scale(1.05);
+}
+
+.imagen {
+    width: 42%;
+}
+
+.imagen img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 3px solid #00e5ff;
+}
+
+
+/*Datos de la luna*/
+
+.laluna {
+    display: flex;
+    gap: 30px;
+    padding: 60px 7%;
+    background-color: #0b1020;
+}
+
+.producto {
+    width: 33%;
+    background-color: #151e2e;
+    border: 1px solid #263449;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.producto:hover {
+    transform: translateY(-8px);
+    border-color: #00e5ff;
+    box-shadow: 0 10px 25px rgba(0, 229, 255, 0.15);
+}
+
+.producto img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.producto h3 {
+    padding: 18px 15px 8px;
+    color: #00e5ff;
+    font-size: 24px;
+}
+
+.producto p {
+    padding: 0 15px 20px;
+    color: #cbd5e1;
+    line-height: 1.5;
+}
+
+
+/*footer*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 45px 7%;
+    background-color: #050814;
+    color: white;
+}
+
+.footer-info {
+    width: 45%;
+}
+
+.footer-info h3 {
+    color: #00e5ff;
+    margin-bottom: 10px;
+}
+
+.footer-contacto {
+    width: 25%;
+}
+
+.footer-contacto h3 {
+    color: #ff1744;
+    margin-bottom: 10px;
+}
+
+.footer-redes {
+    width: 20%;
+}
+
+.footer-redes h3 {
+    color: #00e5ff;
+    margin-bottom: 10px;
+}
+
+.footer-redes a {
+    display: block;
+    color: #d1d5db;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.footer-redes a:hover {
+    color: #00e5ff;
+}
+
+footer > p {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #1f2937;
+    color: #9ca3af;
+}
+
+
+
+@media (max-width: 600px) {
+
+    header,
+    .contenido,
+    .laluna,
+    footer {
+        flex-direction: column;
+    }
+
+    header {
+        gap: 20px;
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .contenido {
+        padding: 45px 20px;
+        text-align: center;
+    }
+
+    .contenido-principal,
+    .imagen,
+    .producto {
+        width: 100%;
+    }
+
+    .contenido-principal h1 {
+        font-size: 40px;
+    }
+
+    .contenido-principal p {
+        font-size: 17px;
+    }
+
+    .imagen {
+        margin-top: 25px;
+    }
+
+    .imagen img {
+        height: 280px;
+    }
+
+    .laluna {
+        padding: 40px 20px;
+        gap: 25px;
+    }
+
+    .producto img {
+        height: 190px;
+    }
+
+    .footer-info,
+    .footer-contacto,
+    .footer-redes {
+        width: 100%;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+}

@@ -71,3 +71,99 @@ header {
 
 }
 
+/* =========================
+   RESPONSIVE PARA CELULARES
+   ========================= */
+@media (max-width: 576px) {
+
+    /* NAVBAR */
+    .lista {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .logo img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .menu li {
+        list-style: none;
+    }
+
+    .menu a {
+        font-size: 16px;
+    }
+
+    .btn-cv {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+
+    /* SECCIÓN PRINCIPAL */
+    section.container-py-5 {
+        margin: 15px !important;
+        padding: 30px 10px !important;
+    }
+
+    section.container-py-5 .row {
+        text-align: center;
+    }
+
+    section.container-py-5 h1 {
+        font-size: 2.2rem;
+    }
+
+    section.container-py-5 h2 {
+        font-size: 1.2rem;
+    }
+
+    section.container-py-5 p {
+        font-size: 15px;
+    }
+
+    /* BOTONES */
+    .d-flex.gap-3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .d-flex.gap-3 a {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    /* FOTO DE PERFIL */
+    section.container-py-5 img {
+        width: 65% !important;
+        margin-top: 30px;
+    }
+
+    /* PROYECTOS */
+    #proyectos {
+        padding: 30px 15px !important;
+    }
+
+    #proyectos h2 {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .card-img-top {
+        height: 200px;
+        object-fit: cover;
+    }
+}
