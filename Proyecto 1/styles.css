@@ -70,7 +70,7 @@ nav a:hover{
     font-size: 2rem;
     margin-bottom: 16px;
     opacity: 0;
-    animation: aparecerDesdeAbajp 0.8s ease-out forwards;
+    animation: aparecerDesdeAbajo 0.8s ease-out forwards;
 }
 
 .hero p{

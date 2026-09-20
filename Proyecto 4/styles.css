@@ -22,7 +22,6 @@ header {
     padding: 22px 8%;
     background-color: #063970;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
-    position: fixed;
     top: 0;
     width: 100%;
 }
@@ -349,9 +348,7 @@ footer p {
     /* INICIO */
 
     .contenido {
-        padding: 50px 20px;
-
-        text-align: center;
+        padding-top: 160px;
     }
 
     .contenido-principal,
