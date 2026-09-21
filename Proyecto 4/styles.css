@@ -317,7 +317,7 @@ footer p {
 
 /*MEDIA QUERY*/
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
 
     header,
     .contenido,
