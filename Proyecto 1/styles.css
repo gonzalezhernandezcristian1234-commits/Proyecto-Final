@@ -177,7 +177,6 @@ footer {
   @media (min-width: 600px) {
     header {
       flex-direction: row;
-      justify-content: space-between;
       padding: 20px 40px;
     }
 
