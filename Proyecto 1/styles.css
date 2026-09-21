@@ -186,26 +186,6 @@ footer {
     }
 }
 
-
- @media (min-width: 1024px) {
-    .hero h1 {
-      font-size: 3rem;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 650px;
-    }
-
-    .caracteristicas {
-      flex-direction: row;
-    }
-
-    .tarjeta {
-      flex: 1;
-    }
-}
-
  @media (prefers-reduced-motion: reduce) {
     * {
       animation: none;
