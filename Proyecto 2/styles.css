@@ -242,7 +242,7 @@ footer{
 
 /*mediaQueries --> son estilos que se activa que se activa para responsive de acuerdo al tammaño de pantalla*/
 
-@media (max-width: 600px){
+@media (min-width: 600px){
     nav ul{
         flex-direction: column;
         gap:10px;
