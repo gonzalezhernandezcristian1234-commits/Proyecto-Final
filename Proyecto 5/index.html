@@ -3,40 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paginas: Actividad final</title>
+    <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="navbar">
-        <a href="#inicio" class="nav-logo">🐈😺</a>
+
+  <!-- NAV -->
+  <input type="checkbox" id="menu-toggle" class="menu-toggle-input">
+  <header class="navbar">
+    <a href="#inicio" class="nav-logo">🐱 Gatolandia</a>
+    <label for="menu-toggle" class="nav-toggle">☰</label>
     <nav class="nav-menu">
-        <a href="#inicio">Inicio</a>
-        <a href="#sobre-mi">Sobre mi</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#testimonios">Testimonios</a>
-        <a href="#contacto">Contacto</a>
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#galeria">Galería</a>
+      <a href="#testimonios">Testimonios</a>
+      <a href="#contacto">Contacto</a>
     </nav>
-    </header>
+  </header>
 
-    <!-- heros -->
-     <section id="inicio" class="hero">
-        <p>Bienvenido a </p>
-        <h1 class="hero-titulo">Gatolandia</h1>
-        <p class="hero-subtitulo">Curiosidades, cuidado y mucho amos para los gatitos</p>
-        <a href="#servicios" class="btn">Saber mas</a>
-     </section>
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <p class="hero-eyebrow">Bienvenido a</p>
+    <h1 class="hero-title">Gatolandia</h1>
+    <p class="hero-subtitle">Curiosidades, cuidados y mucho amor por los gatos</p>
+    <a href="#servicios" class="btn">Explorar 🐾</a>
+  </section>
 
-     <!-- Sobre mi -->
-      <section id="sobre-mi">
-        <div>
-            <h2>Sobre <span>mi</span></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus excepturi saepe qui distinctio sequi quibusdam dignissimos deserunt enim amet error maiores sapiente, ut dicta similique iure fugit quia cupiditate doloremque.</p>
-        </div>
-        <img src="" alt="">
-      </section>
-    
-      <!-- Servicios -->
-       
-    
+  <!-- SOBRE MI -->
+  <section id="sobre-mi" class="about">
+    <div class="about-text">
+      <h2>Sobre <span>mí</span></h2>
+      <p>Soy un amante de los gatos y todo lo relacionado con ellos. Aquí comparto consejos, curiosidades y experiencias para que más personas conozcan y disfruten a estos increíbles compañeros.</p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?w=500" alt="Gato" class="about-img">
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="services">
+    <h2>Servicios</h2>
+    <p class="section-subtitle">Aquí encontrarás todo lo que necesitas</p>
+    <div class="cards">
+      <div class="card">
+        <span class="card-icon">📖</span>
+        <h3>Guías de cuidado</h3>
+        <p>Alimentación, higiene y bienestar.</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">💡</span>
+        <h3>Curiosidades</h3>
+        <p>Datos poco comunes sobre los gatos.</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">🍽️</span>
+        <h3>Alimentación</h3>
+        <p>Recetas caseras y consejos nutricionales.</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">🏠</span>
+        <h3>Adopción</h3>
+        <p>Historias y cómo ayudar a un gato.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section id="galeria" class="gallery">
+    <h2>Galería</h2>
+    <p class="section-subtitle">Un vistazo a la vida felina</p>
+    <div class="gallery-grid">
+      <img src="https://images.unsplash.com/photo-1519052537078-e6302a4968d4?w=300" alt="Gato" class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?w=300" alt="Gato" class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?w=300" alt="Gato" class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=300" alt="Gato" class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?w=300" alt="Gato" class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=300" alt="Gato" class="gallery-item">
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section id="testimonios" class="testimonials">
+    <h2>Testimonios</h2>
+    <p class="section-subtitle">Lo que dicen algunos amantes de los gatos</p>
+    <div class="testimonial-card">
+      <p>"Este sitio me ha ayudado a cuidar mejor a mi gato. La información es clara y fácil de entender."</p>
+      <strong>- Valentina R.</strong>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <footer id="contacto" class="footer">
+    <div class="footer-content">
+      <div class="footer-info">
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna duda o sugerencia? Escríbeme.</p>
+        <p>📧 gatolandia@email.com</p>
+        <p>📍 Medellín, Colombia</p>
+        <p>📷 @gatolandia</p>
+      </div>
+      <form class="contact-form">
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo electrónico" required>
+        <textarea placeholder="Mensaje" required></textarea>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </div>
+    <p class="footer-bottom">© 2026 Gatolandia. Todos los derechos reservados.</p>
+  </footer>
+
 </body>
 </html>
